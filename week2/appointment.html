@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Appointment - Intellect Scholars Academy</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#our-history">Our History</a></li>
+                <li><a href="index.html#courses">Courses</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact-us">Contact Us</a></li>
+                <li><a href="book.html">Book</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Book an Appointment</h1>
+            <p>Fill in the form below to book a session with us.</p>
+        </header>
+
+        <main>
+            <form id="bookingForm" onsubmit="showMessage(event)">
+                <p>
+                    <label>Full Name: <input type="text" required /></label>
+                </p>
+                <p>
+                    <label
+                        >Email Address: <input type="email" required
+                    /></label>
+                </p>
+                <p>
+                    <label
+                        >Phone Number: <input type="number" required
+                    /></label>
+                </p>
+                <p>
+                    <label>Age: <input type="number" /></label>
+                </p>
+                <p>
+                    <label>Preferred Date: <input type="date" /></label>
+                </p>
+                <p>
+                    <label>Preferred Time: <input type="time" /></label>
+                </p>
+                <p>
+                    <label
+                        >Course Interest:
+                        <select required>
+                            <option value="">Select</option>
+                            <option value="math">Mathematics</option>
+                            <option value="science">Science</option>
+                            <option value="literature">Literature</option>
+                            <option value="art">Art</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label
+                        >Additional Notes:
+                        <textarea rows="3" cols="30"></textarea>
+                    </label>
+                </p>
+                <p><input type="submit" value="Submit Booking" /></p>
+            </form>
+
+            <p id="confirmation" style="display: none; color: green">
+                Thank you! Your booking has been submitted.
+            </p>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Intellect Scholars Academy. All rights reserved.</p>
+        </footer>
+
+        <script>
+            function showMessage(event) {
+                event.preventDefault();
+                alert("Thank you! Your booking has been submitted.");
+                document.getElementById("bookingForm").reset();
+            }
+        </script>
+    </body>
+</html>
