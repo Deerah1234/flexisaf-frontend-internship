@@ -1,0 +1,61 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global style */
+body {
+    font-family: Inter, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #555;
+}
+
+/* List */
+.week-list {
+    list-style: none;
+}
+
+.week-list li {
+    margin-bottom: 12px;
+}
+
+.week-list a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.week-list a:hover {
+    background-color: #357ab8;
+}
